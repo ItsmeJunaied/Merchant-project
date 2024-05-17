@@ -11,6 +11,7 @@ body {
 
 }
 
+
 .contact {
     display: flex;
     padding: 80px;
@@ -140,15 +141,30 @@ body {
 
 
 @media screen and (max-width: 900px) and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        padding-right: 0;
+    }
 
     .contact {
         flex-direction: column;
     }
 
+    .contact-form,
+    .contact-name-field,
+    .first-name,
+    .last-name {
+        width: 100%;
+    }
+
     .contact-name-field {
         flex-direction: column;
         align-items: start;
-        width: 340px;
+        width: 100%;
     }
 
     .contact {
@@ -158,20 +174,21 @@ body {
     .name-input-fields,
     .input-fields,
     .contact-form-submit-button,
-    .contact-address {
-        width: 340px;
+    .contact-address,
+    .captcha {
+        width: 90%;
     }
 
 
     .input-field-textarea {
         display: flex;
-        width: 340px;
+        width: 90%;
         height: 120px;
         padding: 10px 14px;
     }
 
     .contact-address {
-        width: 340px;
+        width: 90%;
         padding: 80px 20px;
     }
 }
